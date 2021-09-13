@@ -1,6 +1,14 @@
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Urbanist', sans-serif !important;
+}
+#logo {
+  color: rgb(197, 142, 1);
+  font-size: 44px;
+  font-weight: bold;
+}
+#title {
+  font-size: 14px;
 }
 .search-field {
   border: none;
@@ -13,38 +21,63 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 2px solid rgb(180, 211, 3);
+  max-width: 500px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
-  border-right: none;
+  display: flex;
+  justify-content: space-between;
 }
+
+#input-field {
+  flex-basis: 100%;
+}
+
 .search-button {
   padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  border-radius: 0px !important;
 }
+
+/* single product details */
+.product-details {
+  max-width: 95%;
+  margin: 25px auto !important;
+}
+#single-product-details {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+/* all products */
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
+.product {
+  margin: 10px;
+}
 .single-product {
+  border-radius: 15px;
+  background-color: #FFF8DC;
   padding: 10px;
   transition: 0.6s;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  border-radius: 15px;
+  border: 1px solid rgb(180, 211, 3);
 }
 .product-image {
+  border-radius: 15px;
   width: 150px;
   height: 150px;
 }
@@ -67,9 +100,8 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
     margin-right: 30px;
     position: fixed;
