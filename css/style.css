@@ -1,7 +1,9 @@
+/* body */
 body {
   overflow-x: hidden;
-  font-family: 'Urbanist', sans-serif !important;
+  font-family: "Urbanist", sans-serif !important;
 }
+/* header part */
 #logo {
   color: rgb(197, 142, 1);
   font-size: 44px;
@@ -10,11 +12,13 @@ body {
 #title {
   font-size: 14px;
 }
+/* search area */
 .search-field {
   border: none;
   border-radius: 50px;
-  padding: 5px;
+  padding: 10px;
   outline: none;
+  font-size: 18px;
 }
 .search-field:hover {
   outline: none;
@@ -48,6 +52,7 @@ body {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 25px;
   font-size: 17px;
+  border: 1px dashed rgb(197, 142, 1);
   border-radius: 15px;
 }
 
@@ -67,7 +72,7 @@ body {
 }
 .single-product {
   border-radius: 15px;
-  background-color: #FFF8DC;
+  background-color: #fff8dc;
   padding: 10px;
   transition: 0.6s;
 }
@@ -81,9 +86,10 @@ body {
   width: 150px;
   height: 150px;
 }
+
+/* cart */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -93,11 +99,15 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/* media queries */
 @media only screen and (max-width: 768px) {
+  /* all products */
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  /* cart */
   .cart {
     width: 300px;
     padding: 10px;
@@ -111,6 +121,7 @@ body {
   }
 }
 @media only screen and (max-width: 468px) {
+  /* all products */
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
