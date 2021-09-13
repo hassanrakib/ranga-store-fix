@@ -100,7 +100,7 @@ const showProductDetails = productDetails => {
       <h3>${productDetails.title}</h3>
       <p>${productDetails.description}</p>
       <p>Category: ${productDetails.category}</p>
-      <p>Avg. Rating: <b>${productDetails.rating.rate}</b> out of ${productDetails.rating.count}</p>
+      <p>Avg. Rating: <b>${productDetails.rating.rate}</b> out of ${productDetails.rating.count} rating</p>
       <h2>Price: $ ${productDetails.price}</h2>
       <button onclick="addToCart(${productDetails.price})" id="addToCart-btn" class="buy-now btn btn-warning">add to cart</button>
   </div>
